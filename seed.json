@@ -1,0 +1,28 @@
+{
+  "restaurants": [
+    {"id": "r1", "name": "Pizza Palace", "zone": "north"},
+    {"id": "r2", "name": "Burger House", "zone": "south"},
+    {"id": "r3", "name": "Sushi Spot", "zone": "east"},
+    {"id": "r4", "name": "Taco Terrace", "zone": "west"},
+    {"id": "r5", "name": "Pasta Place", "zone": "center"}
+  ],
+  "orders": [
+    {"id": "o1", "rest_id": "r1", "items": [["m1", 2], ["m2", 1]], "total": 3900, "ts": "2024-01-15 10:30:00", "status": "delivered"},
+    {"id": "o2", "rest_id": "r2", "items": [["m3", 3]], "total": 2400, "ts": "2024-01-15 11:15:00", "status": "delivered"},
+    {"id": "o3", "rest_id": "r3", "items": [["m5", 1], ["m6", 2]], "total": 3000, "ts": "2024-01-15 12:00:00", "status": "assigned"},
+    {"id": "o4", "rest_id": "r1", "items": [["m2", 2]], "total": 3000, "ts": "2024-01-15 12:30:00", "status": "placed"},
+    {"id": "o5", "rest_id": "r4", "items": [["m7", 4]], "total": 2800, "ts": "2024-01-15 13:00:00", "status": "delivered"}
+  ],
+  "couriers": [
+    {"id": "c1", "name": "Alice", "vehicle": "bike", "zone": "north"},
+    {"id": "c2", "name": "Bob", "vehicle": "car", "zone": "south"},
+    {"id": "c3", "name": "Charlie", "vehicle": "scooter", "zone": "east"},
+    {"id": "c4", "name": "Diana", "vehicle": "bike", "zone": "west"},
+    {"id": "c5", "name": "Eve", "vehicle": "car", "zone": "center"}
+  ],
+  "slots": [
+    {"id": "s1", "courier_id": "c1", "start": "2024-01-15 10:00:00", "end": "2024-01-15 12:00:00"},
+    {"id": "s2", "courier_id": "c1", "start": "2024-01-15 13:00:00", "end": "2024-01-15 15:00:00"},
+    {"id": "s3", "courier_id": "c2", "start": "2024-01-15 11:00:00", "end": "2024-01-15 14:00:00"}
+  ]
+}
